@@ -1,36 +1,23 @@
 package com.valekseev.yandextest;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
-
+public class activity_detail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void onButtonClick(View v) {
-
-        TextView textLabel;
-        textLabel = (TextView)findViewById(R.id.textView);
-        textLabel.setText("Test");
-
+        setContentView(R.layout.activity_activity_detail);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_activity_detail, menu);
         return true;
     }
 
@@ -43,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent intent = new Intent(MainActivity.this, activity_detail.class);
-            startActivity(intent);
+
             return true;
         }
 
