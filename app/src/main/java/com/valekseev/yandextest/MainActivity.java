@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
         TextView textLabel;
         textLabel = (TextView)findViewById(R.id.textView);
         textLabel.setText("Test");
+
+        Button header;
+        header= (Button)findViewById(R.id.button2);
+        header.setBackgroundColor(Color.RED);
+
+
+
+        View view = this.getWindow().getDecorView();
+        view.setBackgroundColor(Color.RED);
 
     }
 
